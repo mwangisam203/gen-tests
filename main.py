@@ -22,3 +22,4 @@ print(status)
 print(soup.title)
 print(soup.title.get_text)
 print(soup.body) # gives the whole page on the website
+
