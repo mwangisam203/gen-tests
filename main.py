@@ -15,11 +15,13 @@ response = requests.get(url)
 status = response.status_code
 
 content = response.content
-soup = BeautifulSoup(content, 'html.parser')
+soup = BeautifulSoup(content, "html.parser")
 
 # Print the status code to the terminal
 print(status)
 print(soup.title)
 print(soup.title.get_text)
-print(soup.body) # gives the whole page on the website
+print(soup.body)  # gives the whole page on the website
+
+
 
