@@ -27,3 +27,13 @@ python -m pytest
 6. Simple web parsing
 7. NumPy arrays
 8. Command-line programs
+9. Boolean logic
+10. Loops
+11. Dates
+12. Errors
+13. Comprehensions
+14. Shopping carts
+15. JSON
+16. Dataclasses
+17. Generators
+18. Sorting
