@@ -29,3 +29,9 @@ In your own words, explain:
 - What data went into the function
 - What data came out
 - What error cases were handled
+
+## Second Chapter
+
+After the first pass, choose one of the newer modules and add one extra test
+before changing the implementation. That habit teaches you to describe behavior
+before you edit behavior.
