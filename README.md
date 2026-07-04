@@ -37,3 +37,13 @@ python -m pytest
 16. Dataclasses
 17. Generators
 18. Sorting
+19. Recursion
+20. Sets and tuples
+21. Paths and environment variables
+22. Regular expressions
+23. Statistics and validation
+24. Inventory and bank accounts
+25. Temperatures and gradebooks
+26. Todos and quizzes
+27. Random values and searching
+28. Grids and string formatting
