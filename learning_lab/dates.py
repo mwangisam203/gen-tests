@@ -19,3 +19,8 @@ def add_week(start: date) -> date:
 def is_weekend(day: date) -> bool:
     """Return True for Saturday or Sunday."""
     return day.weekday() >= 5
+
+
+def format_us_date(day: date) -> str:
+    """Return a date as MM/DD/YYYY."""
+    return day.strftime("%m/%d/%Y")
