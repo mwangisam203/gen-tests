@@ -26,3 +26,12 @@ def class_average(scores: dict[str, int]) -> float:
 def passing_students(scores: dict[str, int]) -> list[str]:
     """Return names of students with passing scores."""
     return [name for name, score in scores.items() if score >= 60]
+
+
+def grade_counts(scores: dict[str, int]) -> dict[str, int]:
+    """Count how many students earned each letter grade."""
+    counts: dict[str, int] = {}
+    for score in scores.values():
+        grade = letter_grade(score)
+        counts[grade] = counts.get(grade, 0) + 1
+    return counts
