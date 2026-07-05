@@ -26,3 +26,13 @@ def find_first_long_word(words: list[str], min_length: int) -> str | None:
         if len(word) >= min_length:
             return word
     return None
+
+
+def repeat_until_stop(words: list[str]) -> list[str]:
+    """Return words until the word stop appears."""
+    collected: list[str] = []
+    for word in words:
+        if word.lower() == "stop":
+            break
+        collected.append(word)
+    return collected
