@@ -1,6 +1,6 @@
 import pytest
 
-from learning_lab.loops import countdown, find_first_long_word, running_totals
+from learning_lab.loops import countdown, find_first_long_word, repeat_until_stop, running_totals
 
 
 def test_countdown_includes_zero():
@@ -19,3 +19,7 @@ def test_running_totals_tracks_each_step():
 def test_find_first_long_word_returns_none_when_missing():
     assert find_first_long_word(["hi", "there"], 6) is None
     assert find_first_long_word(["hi", "there"], 5) == "there"
+
+
+def test_repeat_until_stop_breaks_on_stop_word():
+    assert repeat_until_stop(["keep", "going", "stop", "skip"]) == ["keep", "going"]
