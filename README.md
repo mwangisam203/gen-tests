@@ -47,3 +47,8 @@ python -m pytest
 26. Todos and quizzes
 27. Random values and searching
 28. Grids and string formatting
+
+## Practice Habit
+
+For each existing lesson, try adding one small helper and one focused test.
+Small changes make the commit history easier to study later.
