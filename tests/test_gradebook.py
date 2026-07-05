@@ -1,6 +1,6 @@
 import pytest
 
-from learning_lab.gradebook import class_average, letter_grade, passing_students
+from learning_lab.gradebook import class_average, grade_counts, letter_grade, passing_students
 
 
 def test_letter_grade_uses_common_cutoffs():
@@ -22,3 +22,7 @@ def test_class_average_rejects_empty_scores():
 
 def test_passing_students_returns_names():
     assert passing_students({"Ada": 100, "Grace": 55}) == ["Ada"]
+
+
+def test_grade_counts_counts_letter_grades():
+    assert grade_counts({"Ada": 100, "Grace": 85, "Katherine": 85}) == {"A": 1, "B": 2}
