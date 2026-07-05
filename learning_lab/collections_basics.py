@@ -22,3 +22,8 @@ def top_student(scores: dict[str, int]) -> tuple[str, int]:
     if not scores:
         raise ValueError("scores must not be empty")
     return max(scores.items(), key=lambda item: item[1])
+
+
+def flatten_once(groups: list[list[str]]) -> list[str]:
+    """Flatten one level of nested string lists."""
+    return [item for group in groups for item in group]
