@@ -1,6 +1,6 @@
 from datetime import date
 
-from learning_lab.dates import add_week, days_until, is_weekend
+from learning_lab.dates import add_week, days_until, format_us_date, is_weekend
 
 
 def test_days_until_uses_given_today():
@@ -15,3 +15,7 @@ def test_is_weekend_detects_saturday_and_sunday():
     assert is_weekend(date(2026, 7, 4))
     assert is_weekend(date(2026, 7, 5))
     assert not is_weekend(date(2026, 7, 6))
+
+
+def test_format_us_date_uses_month_day_year():
+    assert format_us_date(date(2026, 7, 4)) == "07/04/2026"
