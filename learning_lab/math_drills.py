@@ -22,3 +22,13 @@ def percent(part: float, whole: float) -> float:
     if whole == 0:
         raise ValueError("whole must not be zero")
     return round((part / whole) * 100, 2)
+
+
+def is_prime(number: int) -> bool:
+    """Return True when number is prime."""
+    if number < 2:
+        return False
+    for factor in range(2, int(number**0.5) + 1):
+        if number % factor == 0:
+            return False
+    return True
