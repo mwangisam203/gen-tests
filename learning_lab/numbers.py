@@ -22,3 +22,8 @@ def average(values: list[float]) -> float:
 def is_even(number: int) -> bool:
     """Return True when a number is divisible by 2."""
     return number % 2 == 0
+
+
+def difference(left: float, right: float) -> float:
+    """Return the absolute difference between two numbers."""
+    return abs(left - right)
