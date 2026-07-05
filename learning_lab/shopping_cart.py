@@ -19,3 +19,11 @@ def cart_total(items: list[CartItem]) -> float:
 def item_names(items: list[CartItem]) -> list[str]:
     """Return cart item names in order."""
     return [str(item["name"]) for item in items]
+
+
+def most_expensive_item(items: list[CartItem]) -> str:
+    """Return the name of the highest-priced item."""
+    if not items:
+        raise ValueError("items must not be empty")
+    item = max(items, key=lambda value: float(value["price"]))
+    return str(item["name"])
