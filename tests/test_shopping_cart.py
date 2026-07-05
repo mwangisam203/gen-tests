@@ -1,4 +1,6 @@
-from learning_lab.shopping_cart import cart_total, item_names, line_total
+import pytest
+
+from learning_lab.shopping_cart import cart_total, item_names, line_total, most_expensive_item
 
 
 ITEMS = [
@@ -17,3 +19,12 @@ def test_cart_total_sums_all_lines():
 
 def test_item_names_preserves_order():
     assert item_names(ITEMS) == ["Notebook", "Pen"]
+
+
+def test_most_expensive_item_returns_item_name():
+    assert most_expensive_item(ITEMS) == "Notebook"
+
+
+def test_most_expensive_item_rejects_empty_cart():
+    with pytest.raises(ValueError):
+        most_expensive_item([])
