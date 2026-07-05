@@ -20,3 +20,8 @@ def slugify(text: str) -> str:
 def initials(name: str) -> str:
     """Return uppercase initials for each part of a name."""
     return "".join(part[0].upper() for part in name.split() if part)
+
+
+def reverse_words(text: str) -> str:
+    """Return words in reverse order."""
+    return " ".join(reversed(text.split()))
