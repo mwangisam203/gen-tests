@@ -24,3 +24,15 @@ def password_strength(password: str) -> str:
     if score == 2:
         return "medium"
     return "weak"
+
+
+def missing_password_rules(password: str) -> list[str]:
+    """Return rule names that a password does not satisfy."""
+    missing: list[str] = []
+    if len(password) < 8:
+        missing.append("length")
+    if not has_digit(password):
+        missing.append("digit")
+    if not has_uppercase(password):
+        missing.append("uppercase")
+    return missing
