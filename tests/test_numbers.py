@@ -1,6 +1,6 @@
 import pytest
 
-from learning_lab.numbers import add_tax, average, is_even
+from learning_lab.numbers import add_tax, average, difference, is_even
 
 
 def test_add_tax_rounds_to_cents():
@@ -24,3 +24,8 @@ def test_average_rejects_empty_list():
 def test_is_even():
     assert is_even(8)
     assert not is_even(9)
+
+
+def test_difference_returns_absolute_gap():
+    assert difference(10, 3) == 7
+    assert difference(3, 10) == 7
