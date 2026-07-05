@@ -1,4 +1,4 @@
-from learning_lab.text_tools import initials, normalize_name, slugify
+from learning_lab.text_tools import initials, normalize_name, reverse_words, slugify
 
 
 def test_normalize_name_trims_and_cases():
@@ -11,3 +11,7 @@ def test_slugify_removes_punctuation():
 
 def test_initials_uses_each_name_part():
     assert initials("grace brewster hopper") == "GBH"
+
+
+def test_reverse_words_flips_word_order():
+    assert reverse_words("learn python today") == "today python learn"
