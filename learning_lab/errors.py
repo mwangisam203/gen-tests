@@ -25,3 +25,11 @@ def require_key(data: dict[str, str], key: str) -> str:
     if key not in data:
         raise KeyError(f"missing required key: {key}")
     return data[key]
+
+
+def safe_get(data: dict[str, str], key: str, default: str = "") -> str:
+    """Read a dictionary key without raising."""
+    try:
+        return require_key(data, key)
+    except KeyError:
+        return default
