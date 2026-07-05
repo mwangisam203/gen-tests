@@ -1,6 +1,6 @@
 import pytest
 
-from learning_lab.bank_account import apply_interest, deposit, withdraw
+from learning_lab.bank_account import apply_interest, deposit, transfer, withdraw
 
 
 def test_deposit_adds_money():
@@ -23,3 +23,7 @@ def test_withdraw_rejects_overdraft():
 
 def test_apply_interest_adds_rate():
     assert apply_interest(100.0, 0.05) == 105.0
+
+
+def test_transfer_moves_money_between_balances():
+    assert transfer(100.0, 25.0, 40.0) == (60.0, 65.0)
