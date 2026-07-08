@@ -29,6 +29,13 @@ def myfunc():
     print("my day was" + y)
 
 myfunc()
-print(f"my day was{y}")
+print(f"my day was {y}")
+
+def global_func():
+    global x
+    x = "interesting"
+
+global_func()
+print(f"I had a quite an {x} day")
 
 
