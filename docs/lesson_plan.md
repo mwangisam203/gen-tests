@@ -35,3 +35,8 @@ In your own words, explain:
 After the first pass, choose one of the newer modules and add one extra test
 before changing the implementation. That habit teaches you to describe behavior
 before you edit behavior.
+
+## Push Practice
+
+When you are ready to share work, push one commit or one small group at a time
+and read the remote output before continuing.
