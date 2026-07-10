@@ -38,4 +38,8 @@ def global_func():
 global_func()
 print(f"I had a quite an {x} day")
 
+#test addition
+def add(a, b):
+    return a + b
+
 
