@@ -81,3 +81,17 @@ def test_reverse_single_letter():
 #even number
 def is_even(number):
     return number % 2 == 0
+
+from numbers import is_even
+
+
+def test_even_number():
+    assert is_even(10)
+
+
+def test_odd_number():
+    assert not is_even(9)
+
+
+def test_zero_is_even():
+    assert is_even(0)
