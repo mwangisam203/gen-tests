@@ -32,3 +32,11 @@ def page_title(html):
     soup = BeautifulSoup(html, "html.parser")
     title = soup.find("title")
     return title.text if title else ""
+
+def link_texts(html):
+    soup = BeautifulSoup(html, "html.parser")
+    return [
+        link.get_text(strip=True)
+        for link in soup.find_all("a")
+        if link.get_text(strip=True)
+    ]
