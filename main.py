@@ -99,3 +99,17 @@ def test_zero_is_even():
 #email validation test
 def is_valid_email(email):
     return "@" in email and "." in email
+
+#from validation import is_valid_email
+
+
+def test_valid_email():
+    assert is_valid_email("john@gmail.com")
+
+
+def test_missing_at_symbol():
+    assert not is_valid_email("johngmail.com")
+
+
+def test_missing_dot():
+    assert not is_valid_email("john@gmail")
