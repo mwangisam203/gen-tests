@@ -10,6 +10,7 @@ HTML = """
     <a href="/empty"></a>
   </body>
 </html>
+
 """
 
 
@@ -23,3 +24,11 @@ def test_page_title_returns_empty_string_when_missing():
 
 def test_link_texts_ignores_empty_links():
     assert link_texts(HTML) == ["One", "Two"]
+
+
+from bs4 import BeautifulSoup
+
+def page_title(html):
+    soup = BeautifulSoup(html, "html.parser")
+    title = soup.find("title")
+    return title.text if title else ""
