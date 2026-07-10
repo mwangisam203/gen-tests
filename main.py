@@ -95,3 +95,7 @@ def test_odd_number():
 
 def test_zero_is_even():
     assert is_even(0)
+
+#email validation test
+def is_valid_email(email):
+    return "@" in email and "." in email
