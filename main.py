@@ -76,3 +76,8 @@ def test_reverse_empty_string():
 
 def test_reverse_single_letter():
     assert reverse("A") == "A"
+
+
+#even number
+def is_even(number):
+    return number % 2 == 0
