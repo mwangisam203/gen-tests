@@ -58,3 +58,21 @@ def test_add_negative_numbers():
 def test_add_zero():
     assert add(0, 7) == 7
 
+
+def reverse(text):
+    return text[::-1]
+
+
+#Testing String Reversal :from strings import reverse
+
+
+def test_reverse_word():
+    assert reverse("python") == "nohtyp"
+
+
+def test_reverse_empty_string():
+    assert reverse("") == ""
+
+
+def test_reverse_single_letter():
+    assert reverse("A") == "A"
