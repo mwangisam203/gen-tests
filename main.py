@@ -163,3 +163,21 @@ def test_create_user():
 
     assert user["name"] == "Sam"
     assert user["age"] == 25
+
+#testing param
+import pytest
+
+from math_utils import add
+
+
+@pytest.mark.parametrize(
+    "a,b,result",
+    [
+        (1, 2, 3),
+        (5, 5, 10),
+        (-2, 3, 1),
+        (0, 0, 0),
+    ],
+)
+def test_add(a, b, result):
+    assert add(a, b) == result
