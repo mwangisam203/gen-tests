@@ -139,3 +139,13 @@ class BankAccount:
 
     def deposit(self, amount):
         self.balance += amount
+
+def test_initial_balance():
+    account = BankAccount()
+    assert account.balance == 0
+
+
+def test_deposit():
+    account = BankAccount()
+    account.deposit(500)
+    assert account.balance == 500
