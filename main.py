@@ -129,3 +129,13 @@ def test_sort_empty_list():
 
 def test_sort_duplicates():
     assert sort_numbers([3, 2, 3]) == [2, 3, 3]
+
+
+#testing bank acc
+class BankAccount:
+
+    def __init__(self):
+        self.balance = 0
+
+    def deposit(self, amount):
+        self.balance += amount
