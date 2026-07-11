@@ -157,3 +157,9 @@ def create_user(name, age):
         "name": name,
         "age": age
     }
+
+def test_create_user():
+    user = create_user("Sam", 25)
+
+    assert user["name"] == "Sam"
+    assert user["age"] == 25
