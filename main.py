@@ -117,3 +117,15 @@ def test_missing_dot():
 #number sorting
 def sort_numbers(numbers):
     return sorted(numbers)
+
+
+def test_sort_random_numbers():
+    assert sort_numbers([5, 1, 3]) == [1, 3, 5]
+
+
+def test_sort_empty_list():
+    assert sort_numbers([]) == []
+
+
+def test_sort_duplicates():
+    assert sort_numbers([3, 2, 3]) == [2, 3, 3]
