@@ -113,3 +113,7 @@ def test_missing_at_symbol():
 
 def test_missing_dot():
     assert not is_valid_email("john@gmail")
+
+#number sorting
+def sort_numbers(numbers):
+    return sorted(numbers)
