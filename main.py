@@ -149,3 +149,11 @@ def test_deposit():
     account = BankAccount()
     account.deposit(500)
     assert account.balance == 500
+
+
+#dict test
+def create_user(name, age):
+    return {
+        "name": name,
+        "age": age
+    }
