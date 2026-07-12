@@ -55,3 +55,12 @@ for letter in text:
     reversed_text = letter + reversed_text
 
 print(reversed_text)
+
+# Determine whether a number is even
+
+number = 24
+
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
