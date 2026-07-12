@@ -17,3 +17,16 @@ for i in array:
     miniVal = i
 
 print("lowest value: ", miniVal)
+
+
+# Find the largest number in a list
+
+numbers = [12, 5, 87, 34, 19]
+
+largest = numbers[0]
+
+for number in numbers:
+    if number > largest:
+        largest = number
+
+print(largest)   # 87
