@@ -30,3 +30,16 @@ for number in numbers:
         largest = number
 
 print(largest)   # 87
+
+# Count how many vowels are in a word
+
+word = "programming"
+vowels = "aeiou"
+
+count = 0
+
+for letter in word:
+    if letter in vowels:
+        count += 1
+
+print(count)    # 3
