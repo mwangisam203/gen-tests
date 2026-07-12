@@ -6,3 +6,14 @@ for i in my_array:
     minVal = i
 
 print('Lowest value:', minVal)
+
+
+array = [ 9, 4, 8, 14, 24, 5, 12, 15]
+
+miniVal = array[0]
+
+for i in array:
+  if i < miniVal:
+    miniVal = i
+
+print("lowest value: ", miniVal)
