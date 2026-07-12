@@ -43,3 +43,15 @@ for letter in word:
         count += 1
 
 print(count)    # 3
+
+
+# Reverse a string manually
+
+text = "Python"
+
+reversed_text = ""
+
+for letter in text:
+    reversed_text = letter + reversed_text
+
+print(reversed_text)
