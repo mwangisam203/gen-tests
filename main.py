@@ -167,7 +167,7 @@ def test_create_user():
 #testing param
 import pytest
 
-from math_utils import add
+
 
 
 @pytest.mark.parametrize(
