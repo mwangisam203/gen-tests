@@ -173,3 +173,8 @@ for i in numbers:
         smallest_number = i
 
 print("smallest number: ", smallest_number)
+
+numbers.sort(reverse=True)
+print(numbers)
+
+
