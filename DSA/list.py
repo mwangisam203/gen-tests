@@ -76,3 +76,14 @@ for number in numbers:
         unique.append(number)
 
 print(unique)
+
+stack = []
+
+stack.append('A')
+stack.append('B')
+stack.append('C')
+print("Stack: ", stack)
+
+# Peek
+topElement = stack[-1]
+print("Peek: ", topElement)
