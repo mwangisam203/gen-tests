@@ -90,3 +90,10 @@ print("My last element: ", topElement)
 
 remove_element = stack.pop()
 print("popped item: ", remove_element)
+
+print("remaining items: ", stack)
+
+isEmpty = not bool(stack)
+print("If empty:", isEmpty)
+
+print("new length:",len(stack))
