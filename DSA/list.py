@@ -79,11 +79,14 @@ print(unique)
 
 stack = []
 
-stack.append('A')
-stack.append('B')
-stack.append('C')
-print("Stack: ", stack)
+stack.append("a")
+stack.append("b")
+stack.append("c")
+stack.append("k")
+stack.append("h")
 
-# Peek
 topElement = stack[-1]
-print("Peek: ", topElement)
+print("My last element: ", topElement)
+
+remove_element = stack.pop()
+print("popped item: ", remove_element)
