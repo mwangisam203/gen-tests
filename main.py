@@ -43,8 +43,6 @@
 #     return a + b
 
 
-
-
 # def test_add_two_positive_numbers():
 #     assert add(2, 3) == 5
 
@@ -61,7 +59,7 @@
 #     return text[::-1]
 
 
-#Testing String Reversal :from strings import reverse
+# Testing String Reversal :from strings import reverse
 
 
 # def test_reverse_word():
@@ -163,7 +161,6 @@
 #     assert user["age"] == 25
 
 
-
 numbers = [10, 8, 32, 12, 25, 78, 41, 13, 6, 1, 5]
 
 smallest_number = numbers[0]
@@ -178,3 +175,12 @@ numbers.sort(reverse=True)
 print(numbers)
 
 
+digits = [10, 36, 12, 54, 96, 17, 3, 23, 16, 1]
+
+smaller = digits[0]
+
+for digit in digits:
+    if digit < smaller:
+        smaller = digit
+
+print("smallest digit: ", smaller)
