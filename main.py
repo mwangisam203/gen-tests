@@ -200,3 +200,6 @@ removed_fruit = fruits.pop()
 print("my popped fruit:", removed_fruit)
 
 print("remained fruits:", fruits)
+
+emptyBasket = not bool(fruits)
+print("Is my basket empty?:", emptyBasket)
