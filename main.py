@@ -184,3 +184,19 @@ for digit in digits:
         smaller = digit
 
 print("smallest digit: ", smaller)
+
+
+fruits = []
+
+fruits.append("apple")
+fruits.append("mango")
+fruits.append("pawpaw")
+fruits.append("lemon")
+
+print("My fruits:", fruits)
+
+removed_fruit = fruits.pop()
+
+print("my popped fruit:", removed_fruit)
+
+print("remained fruits:", fruits)
